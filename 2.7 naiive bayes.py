@@ -48,7 +48,7 @@ visualize_classifier(classifier_new, X_test, y_test)
 ###############################################
 # Scoring functions
 
-num_folds = 3
+num_folds = 5
 accuracy_values = cross_val_score(classifier, 
         X, y, scoring='accuracy', cv=num_folds)
 print("Accuracy: " + str(round(100*accuracy_values.mean(), 2)) + "%")
